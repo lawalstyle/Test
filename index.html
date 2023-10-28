@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Flag Project</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .flag {
+            height: 60vh; /* relative height for responsiveness */
+            width: 90vw; /* relative width for responsiveness */
+            max-width: 900px; /* original max dimensions */
+            max-height: 600px; /* original max dimensions */
+            display: flex;
+            flex-direction: column;
+            color: white;
+            position: relative;
+        }
+
+        .flag > p {
+            margin: 0;
+            padding: 1rem 0;
+            font-size: 5vw; /* relative size for responsiveness */
+            z-index: 2;
+            position: relative;
+        }
+
+        .flag > div.red {
+            background-color: red;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flag > div.blue {
+            background-color: darkblue;
+            height: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            background-color: white;
+            height: 66.66%;
+            width: 33.33%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle > p {
+            color: black;
+            font-size: 3vw; /* relative size for responsiveness */
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flag">
+        <div class="red">
+            <p>The Flag</p>
+        </div>
+        <div class="blue">
+            <div class="circle">
+                <p>of Laos</p>
+            </div>
+        </div>
+        <div class="red"></div>
+    </div>
+</body>
+
+</html>
